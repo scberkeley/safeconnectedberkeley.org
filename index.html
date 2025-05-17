@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Safe Connected Berkeley a community initiative for resilient communication and neighborhood safety." />
+    <meta name="author" content="Safe Connected Berkeley" />
+    <title>Safe and Connected Berkeley</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+    <script>
+        function copyEmail() {
+        const textarea = document.getElementById('email-template');
+        textarea.select();
+        textarea.setSelectionRange(0, 99999); // For mobile
+        navigator.clipboard.writeText(textarea.value).then(() => {
+            alert('Email text copied to clipboard!');
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
+        }
+    </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111827;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #111827;
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #6b7280;
+      padding: 2rem 1rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    #email-template {
+      background-color: #fff;
+      border: 1px solid #e5e7eb;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YES to a SAFE and CONNECTED Berkeley</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Emergency Preparedness</h2>
+      <ul>
+        <li>In our fire and earthquake prone region, real-time alerts and uninterrupted connectivity save lives.</li>
+        <li>During emergencies, cellular equipment can get overloaded or fail altogether. Small cells can reduce this risk.</li>
+        <li>Our first responders depend on reliable cellular coverage to coordinate effectively during emergencies in addition to radios.</li>
+      </ul>
+    </section>
+
+    <section>
+        <h2>Adapt to Our Modern Needs</h2>
+        <ul>
+            <li>Most homes no longer have landlines; cellular is now the primary method of communication.</li>
+            <li>Between phones, smartwatches, and tablets, the average household puts significant load on critical local cellular equipment.</li>
+            <li>This small cell will offload that burden, improving speed and reliability for everyone nearby.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Strengthen Our Critical Infrastructure</h2>
+        <ul>
+            <li>Small cells make the network more resilient and distributed.
+            <li>Instead of relying on a few overloaded cellular sites, this installation provides localized, high-performance service right where people live.
+        </ul>
+    </section>
+
+    <section>
+        <h2>Support Our Aging-in-Place Residents</h2>
+        <ul>
+            <li>Many in our community are aging in place while their adult children live elsewhere due to rising housing costs.</li>
+            <li>These families rely on strong cellular service for daily check-ins, telehealth, and smart medical devices (like Apple Watches with fall detection).</li>
+            <li>Inconsistent coverage puts our seniors at risk of delayed care or unreported emergencies.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Promote Digital Equity</h2>
+        <ul>
+            <li>Not every household has high-speed broadband. Cellular is the only connection for some.</li>
+            <li>Better coverage ensures students, teachers, workers, and families can access essential services without dropped calls, slow speeds, or dead zones.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Voice your support</h2>
+        <p>Contact Berkeley city officials to make sure your voice of support for a Safe and Connected Berkeley is heard. Feel to use the supplied email template below.</p>
+        <ul>
+            <li>City of Berkeley Civil Engineer: <a href="mailto:PWEngineering@berkeleyca.gov">PWEngineering@berkeleyca.gov</a></li>
+            <li>City Manager Paul Buddenhagen: <a href="mailto:CManager@berkeleyca.gov">CManager@berkeleyca.gov</a></li>
+            <li>Director of Public Works, Terrance Davis: <a href="mailto:publicworks@berkelyca.gov">publicworks@berkelyca.gov</a></li>
+            <li>City Attorney, Farimah Brown: <a href="mailto:attorney@berkeleyca.gov">attorney@berkeleyca.gov</a></li>
+        </ul>
+
+<textarea id="email-template" rows="18" style="width: 100%; padding: 1em; font-family: inherit; font-size: 1em; border: 1px solid #999; border-radius: 6px;">
+Dear Berkeley City Official,
+
+I'm writing to express support for the proposed small cell wireless site near 1850 Sonoma Ave at Josephine St. This upgrade will strengthen our community’s connectivity—something that’s increasingly essential for public safety, access to information, and daily life.
+
+Expanded and reliable cellular service supports:
+– Emergency alerts and first responders
+– Reduced congestion on existing cellular equipment from modern and increased device use
+– Families, workers, and students stay connected with essential services
+- Seniors aging in place stay connected with telehealth and safety devices
+– Neighbors without access to broadband
+
+This small cell will improve coverage using existing infrastructure, without introducing new towers or major visual changes. It’s a thoughtful, low-impact improvement that benefits our entire neighborhood.
+
+Berkeley should be a city that not only cares—but builds. I urge you to support this installation and help ensure our community stays safe, connected, and prepared.
+
+Sincerely,
+[Your Name]
+[Optional: Neighborhood or Street Name]
+</textarea>
+        <button onclick="copyEmail()" style="margin-top: 1em; padding: 0.5em 1em; background-color: #0077cc; color: white; border: none; border-radius: 4px;">Copy Email Text</button>
+    </section>
+  </main>
+
+  <footer>
+    Safe and Connected Berkeley
+  </footer>
+</body>
+</html>
