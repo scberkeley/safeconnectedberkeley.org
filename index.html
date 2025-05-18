@@ -130,9 +130,14 @@
         color: #0077cc
     }
 
+    #buttons {        
+        margin-top: 0.25em;
+    }
+
     #buttons em {
-        color: #4a8832;
+        color: #777;
         font-style: normal;
+        font-size: 0.8rem;
     }
 
     #email-template {
@@ -173,9 +178,9 @@
             <li>City Attorney, Farimah Brown: <a href="mailto:attorney@berkeleyca.gov">attorney@berkeleyca.gov</a></li>
         </ul>
         
+        <button onclick="sendEmail()" class="primary">Open in Mail App</button><button onclick="copyEmail()" class="secondary">Copy Email Text</button>
         <div id="buttons">
-            <button onclick="sendEmail()" class="primary">Open in Mail App</button> <em>Creates a draft email with fields pre-filled</em><br />
-            <button onclick="copyEmail()" class="secondary">Copy Email Text</button>
+            <em>&#x21B3; Creates a draft email with fields pre-filled</em>
         </div>
 
         <textarea id="email-template" rows="18">
