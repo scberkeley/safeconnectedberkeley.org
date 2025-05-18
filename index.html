@@ -3,51 +3,73 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Safe Connected Berkeley a community initiative for resilient communication and neighborhood safety." />
-    <meta name="author" content="Safe Connected Berkeley" />
+    <meta name="description" content="Safe and Connected Berkeley supports investing in our critical cellular infrasctructure" />
+    <meta name="author" content="Safe and Connected Berkeley" />
     <title>Safe and Connected Berkeley</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <script data-goatcounter="https://scberkeley.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <script>
-        function copyEmail() {
-        const textarea = document.getElementById('email-template');
-        textarea.select();
-        textarea.setSelectionRange(0, 99999); // For mobile
-        navigator.clipboard.writeText(textarea.value).then(() => {
-            alert('Email text copied to clipboard!');
-        }).catch(err => {
-            console.error('Failed to copy text: ', err);
-        });
-        }
-    </script>
+            function copyEmail() {
+            const textarea = document.getElementById('email-template');
+            textarea.select();
+            textarea.setSelectionRange(0, 99999); // For mobile
+            navigator.clipboard.writeText(textarea.value).then(() => {
+                alert('Email text copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+            }
+        </script>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9fafb;
-      color: #1f2937;
-      line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #CBEDBE;
+        color: #000;
+        line-height: 1.6;
+
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
 
-    header {
-      background-color: #111827;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    main {
+    header, main {
       max-width: 720px;
       margin: 2rem auto;
       padding: 0 1rem;
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 2rem;
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 1.2;
+    }
+
+    header h1 em {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 3.5rem;
+    }
+
+    header h1 strong {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    header h1 span {
+        font-size: 3rem;
     }
 
     section {
@@ -89,10 +111,45 @@
 </head>
 <body>
   <header>
-    <h1>YES to a SAFE and CONNECTED Berkeley</h1>
+    <h1><em>YES</em> to a <br /><strong>SAFE</strong> and <br /><strong>CONNECTED</strong> <br /><span>Berkeley</span></h1>
   </header>
 
   <main>
+    <section>
+        <h2>Voice Your Support</h2>
+        <p>Contact Berkeley city officials to make sure your voice of support for a Safe and Connected Berkeley is heard. Feel to use the supplied email template below.</p>
+        <ul>
+            <li>City of Berkeley Civil Engineer: <a href="mailto:PWEngineering@berkeleyca.gov">PWEngineering@berkeleyca.gov</a></li>
+            <li>City Manager Paul Buddenhagen: <a href="mailto:CManager@berkeleyca.gov">CManager@berkeleyca.gov</a></li>
+            <li>Director of Public Works, Terrance Davis: <a href="mailto:publicworks@berkelyca.gov">publicworks@berkelyca.gov</a></li>
+            <li>City Attorney, Farimah Brown: <a href="mailto:attorney@berkeleyca.gov">attorney@berkeleyca.gov</a></li>
+        </ul>
+
+        <button onclick="copyEmail()" style="margin-top: 1em; padding: 0.5em 1em; background-color: #0077cc; color: white; border: none; border-radius: 4px;">Copy Email Text</button>
+
+        <textarea id="email-template" rows="18" style="width: 100%; padding: 1em; font-family: inherit; font-size: 1em; border: 1px solid #999; border-radius: 6px;">
+Dear Berkeley City Official,
+
+I'm writing to express support for the proposed small cell wireless site near 1850 Sonoma Ave at Josephine St. This upgrade will strengthen our community’s connectivity—something that’s increasingly essential for public safety, access to information, and daily life.
+
+Expanded and reliable cellular service supports:
+– Emergency alerts and first responders
+– Reduced congestion on existing cellular equipment from modern and increased device use
+– Families, workers, and students stay connected with essential services
+- Seniors aging in place stay connected with telehealth and safety devices
+– Neighbors without access to broadband
+
+This small cell will improve coverage using existing infrastructure, without introducing new towers or major visual changes. It’s a thoughtful, low-impact improvement that benefits our entire neighborhood.
+
+Berkeley should be a city that not only cares—but builds. I urge you to support this installation and help ensure our community stays safe, connected, and prepared.
+
+Sincerely,
+[Your Name]
+        </textarea>
+            </section>
+
+    <hr />
+
     <section>
       <h2>Emergency Preparedness</h2>
       <ul>
@@ -135,43 +192,10 @@
             <li>Better coverage ensures students, teachers, workers, and families can access essential services without dropped calls, slow speeds, or dead zones.</li>
         </ul>
     </section>
-
-    <section>
-        <h2>Voice your support</h2>
-        <p>Contact Berkeley city officials to make sure your voice of support for a Safe and Connected Berkeley is heard. Feel to use the supplied email template below.</p>
-        <ul>
-            <li>City of Berkeley Civil Engineer: <a href="mailto:PWEngineering@berkeleyca.gov">PWEngineering@berkeleyca.gov</a></li>
-            <li>City Manager Paul Buddenhagen: <a href="mailto:CManager@berkeleyca.gov">CManager@berkeleyca.gov</a></li>
-            <li>Director of Public Works, Terrance Davis: <a href="mailto:publicworks@berkelyca.gov">publicworks@berkelyca.gov</a></li>
-            <li>City Attorney, Farimah Brown: <a href="mailto:attorney@berkeleyca.gov">attorney@berkeleyca.gov</a></li>
-        </ul>
-
-<textarea id="email-template" rows="18" style="width: 100%; padding: 1em; font-family: inherit; font-size: 1em; border: 1px solid #999; border-radius: 6px;">
-Dear Berkeley City Official,
-
-I'm writing to express support for the proposed small cell wireless site near 1850 Sonoma Ave at Josephine St. This upgrade will strengthen our community’s connectivity—something that’s increasingly essential for public safety, access to information, and daily life.
-
-Expanded and reliable cellular service supports:
-– Emergency alerts and first responders
-– Reduced congestion on existing cellular equipment from modern and increased device use
-– Families, workers, and students stay connected with essential services
-- Seniors aging in place stay connected with telehealth and safety devices
-– Neighbors without access to broadband
-
-This small cell will improve coverage using existing infrastructure, without introducing new towers or major visual changes. It’s a thoughtful, low-impact improvement that benefits our entire neighborhood.
-
-Berkeley should be a city that not only cares—but builds. I urge you to support this installation and help ensure our community stays safe, connected, and prepared.
-
-Sincerely,
-[Your Name]
-[Optional: Neighborhood or Street Name]
-</textarea>
-        <button onclick="copyEmail()" style="margin-top: 1em; padding: 0.5em 1em; background-color: #0077cc; color: white; border: none; border-radius: 4px;">Copy Email Text</button>
-    </section>
   </main>
 
   <footer>
-    Safe and Connected Berkeley
+    Safe and Connected Berkeley can be contacted at <a href="mailto:safeconnectedberkeley@gmail.com">safeconnectedberkeley@gmail.com</a>
   </footer>
 </body>
 </html>
