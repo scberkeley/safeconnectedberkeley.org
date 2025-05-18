@@ -27,7 +27,8 @@
         }
 
         function sendEmail() {
-        const body = encodeURIComponent(document.getElementById('email-template').value);
+        const text = document.getElementById('email-template').value;
+        const body = encodeURIComponent(text.replace(/\n/g, '\r\n')); // Convert to CRLF
         const subject = encodeURIComponent("Support for Small Cell Installation at 1850 Sonoma Ave");
         const recipients = "PWEngineering@berkeleyca.gov,CManager@berkeleyca.gov,publicworks@berkelyca.gov,attorney@berkeleyca.gov";
         const mailtoLink = `mailto:${recipients}?subject=${subject}&body=${body}`;
