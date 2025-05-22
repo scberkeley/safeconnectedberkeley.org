@@ -30,7 +30,7 @@
         const text = document.getElementById('email-template').value;
         const body = encodeURIComponent(text.replace(/\n/g, '\r\n')); // Convert to CRLF
         const subject = encodeURIComponent("Support for Small Cell Installation at 1850 Sonoma Ave");
-        const recipients = "PWEngineering@berkeleyca.gov,CManager@berkeleyca.gov,publicworks@berkelyca.gov,attorney@berkeleyca.gov";
+        const recipients = "PWEngineering@berkeleyca.gov,CManager@berkeleyca.gov,publicworks@berkeleyca.gov,attorney@berkeleyca.gov";
         const mailtoLink = `mailto:${recipients}?subject=${subject}&body=${body}`;
 
         // Open default mail app
@@ -174,7 +174,7 @@
         <ul>
             <li>City of Berkeley Civil Engineer: <a href="mailto:PWUtilityfeedback@cityofberkeley.info">PWUtilityfeedback@cityofberkeley.info</a></li>
             <li>City Manager Paul Buddenhagen: <a href="mailto:CManager@berkeleyca.gov">CManager@berkeleyca.gov</a></li>
-            <li>Director of Public Works, Terrance Davis: <a href="mailto:publicworks@berkelyca.gov">publicworks@berkelyca.gov</a></li>
+            <li>Director of Public Works, Terrance Davis: <a href="mailto:publicworks@berkeleyca.gov">publicworks@berkeleyca.gov</a></li>
             <li>City Attorney, Farimah Brown: <a href="mailto:attorney@berkeleyca.gov">attorney@berkeleyca.gov</a></li>
         </ul>
         
